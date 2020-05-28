@@ -1,0 +1,15 @@
+.search {
+  max-width: 600px;
+}
+
+h1 {
+  padding-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+
+.wrapper {
+  height: 100vh;
+  font-family: font-family: 'Playfair Display', serif;
+}
