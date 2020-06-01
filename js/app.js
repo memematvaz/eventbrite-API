@@ -16,7 +16,16 @@ search = (e) => {
 
     if(textSearch) {
         console.log('searching')
-    } else { console.log('no hay nada')}
+    } else { 
+        ui.errorMessage('Escribe qué estás buscando', 'alert alert-danger mt-4')
+    }
+}
+
+deleteErrorMessage = () => {
+    const errorMessage = document.querySelector('.alert');
+    if(errorMessage) {
+        errorMessage.remove()
+    }
 }
 
 searchBtn.addEventListener('click', search)

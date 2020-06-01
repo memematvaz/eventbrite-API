@@ -25,4 +25,13 @@ class Interface {
                 })
             })
     }
+
+    errorMessage(message, classes){
+        const div = document.createElement('div');
+        div.classList = classes;
+        div.appendChild(document.createTextNode(message));
+
+        const searchDiv = document.querySelector('#search');
+        searchDiv.appendChild(div);
+    }
 }
