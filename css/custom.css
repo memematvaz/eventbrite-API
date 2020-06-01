@@ -13,3 +13,7 @@ h1 {
   height: 100vh;
   font-family: font-family: 'Playfair Display', serif;
 }
+
+.alert {
+  text-align: center;
+}

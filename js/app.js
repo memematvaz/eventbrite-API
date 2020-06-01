@@ -15,7 +15,13 @@ search = (e) => {
     const categorySelected = categoriesSelect.options[categoriesSelect.selectedIndex].value;
 
     if(textSearch) {
-        console.log('searching')
+        eventbrite.getEvents(textSearch, categorySelected)
+        .then(data => {
+            console.log(data)
+
+        })
+
+
     } else { 
         ui.errorMessage('Escribe qué estás buscando', 'alert alert-danger mt-4')
     }

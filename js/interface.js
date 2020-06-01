@@ -33,5 +33,16 @@ class Interface {
 
         const searchDiv = document.querySelector('#search');
         searchDiv.appendChild(div);
+
+        setTimeout(() => {
+            this.deleteMessage();
+        }, 3000);
+    }
+
+    deleteMessage() {
+        const message = document.querySelector('.alert')
+        if(message){
+            message.remove()
+        }
     }
 }
